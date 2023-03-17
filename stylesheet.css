@@ -6,7 +6,7 @@ body{
   width:90%;
   margin:0 auto;
   padding:2em 0 6em;
-  background-image: url("./img/golf_bg.jpg");
+  background-image: url("./img/golf_bg2.jpg");
   /*height: 30vw;*/
   /*width: 100%;*/
   display: flex;
@@ -15,7 +15,7 @@ body{
   justify-content: center;
   background-position: center;
   background-repeat: no-repeat; /* 画像をリピートしたくないとき */
-  background-size: cover;
+  background-size: cover; /* 自動的に画像のサイズを調整 要素が確実に覆われるけど、画像の全体表示とは限らない */
   background-attachment: fixed; /* 下にスクロールしていっても、背景は動かずそのまま */
 }
 h1:before{
@@ -35,7 +35,7 @@ a,a:visited,a:hover,a:active{
   position:relative;
   transition:0.5s color ease;
   text-decoration:none;
-  color:#81b3d2;
+  color:#fefefe;
   font-size:2.5em;
 }
 a:hover{
