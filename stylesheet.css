@@ -27,7 +27,7 @@ h1{
   text-transform:lowercase;
 }
 .wrapper{
-  margin:3em 0;
+  margin:2em 0;
 }
 a,a:visited,a:hover,a:active{
   -webkit-backface-visibility:hidden;
@@ -35,11 +35,11 @@ a,a:visited,a:hover,a:active{
   position:relative;
   transition:0.5s color ease;
   text-decoration:none;
-  color:#fefefe;
-  font-size:2.5em;
+  color:#f5f5f5;
+  font-size:3.5em;
 }
 a:hover{
-  color:#d73444;
+  color:#cd5c5c;
 }
 a.before:before,a.after:after{
   content: "";
@@ -56,10 +56,12 @@ a.after:after{
 }
 a.before:before,a.after:after{
   height:5px;
-  height:0.35rem;
+  height:0.15rem; /* 線の幅 */
   width:0;
-  background:#d73444;
+  background:#cd5c5c;
 }
+
+/*
 a.first:after{
   left:0;
 }
@@ -92,9 +94,11 @@ a.eigth:after{
 a.before:hover:before,a.after:hover:after{
   width:100%;
 }
+*/
+
 .square{
   box-sizing:border-box;
-  margin-left:-0.4em;
+  margin-left:0em;
   position:relative;
   font-size:2.5em;
   overflow:hidden;
@@ -112,9 +116,9 @@ a.before:hover:before,a.after:hover:after{
           backface-visibility:hidden;
   position:absolute;
   width:5px;
-  width:0.35rem;
+  width:0.15rem; /* 線の幅 */
   height:0;
-  background:#d73444;
+  background:#cd5c5c;
 }
 .square:before{
   left:0;
@@ -141,9 +145,13 @@ a.before:hover:before,a.after:hover:after{
 .square.individual a:after{
   transition:0.25s all ease 0.4s;
 }
+
+/* 縦にどれだけ伸びるか */
 .square:hover:before,.square:hover:after{
   height:calc(100% + 0.4em);
 }
+
+/* 横にどれだけ伸びるか */
 .square:hover a:before,.square:hover a:after{
   width:100%;
 }
