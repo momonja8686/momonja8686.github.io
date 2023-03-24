@@ -6,7 +6,7 @@ body{
   width:90%;
   margin:0 auto;
   padding:2em 0 6em;
-  background-image: url("./img/golf_bg2.jpg");
+  background-image: url("img/golf_bg2.jpg");
   /*height: 30vw;*/
   /*width: 100%;*/
   display: flex;
